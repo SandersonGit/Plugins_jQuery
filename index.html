@@ -30,22 +30,22 @@
         <div class="container container-flex">
           <ul>
             <li>
-              <a href="#">Sobre</a>
+              <a href="#sobre-a-loja">Sobre</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Em destaque</a>
+              <a href="#emDestaque">Em destaque</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Promoções</a>
+              <a href="#promocao">Promoções</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Contato</a>
+              <a href="#contato">Contato</a>
             </li>
           </ul>
         </div>
@@ -57,7 +57,7 @@
         <img src="images/slide2.png" alt="BMW">
         <img src="images/slide3.png" alt="FORD">
     </div>
-
+    <span id="sobre-a-loja"></span>
     <section id="sobre-a-loja">
         <div class="container container-flex">
             <img src="images/loja.jpg" alt="Imagens da loja EBAC Motors">
@@ -69,7 +69,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="emDestaque">
         <div class="container">
             <h2>Carros em Destaque</h2>
             <ul class="container-flex lista-veiculos">
@@ -149,7 +149,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="promocao">
         <div class="container">
             <h2>Promoções</h2>
             <ul class="container-flex lista-veiculos">
@@ -230,6 +230,61 @@
     </section>
 
 
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome</label>
+                    <input name="nome" type="text" id="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input name="telefone" type="tel" id="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">Email:</label>
+                    <input name="email" type="email" id="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Veículo de interesse:</label>
+                    <input type="text" name="veiculo" id="veiculo-interesse">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem"  id="mensagem"></textarea>
+                </div>
+                <button type="submit">Menssagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2022 &copy; EBAC Motors - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="icones/facebook.png" alt="icone facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="icones/instagram.png" alt="icone Intagran">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="icones/youtube.png" alt="icone YouTube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
 
 
 
@@ -243,5 +298,8 @@
     ></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="main.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.min.js"></script>
   </body>
 </html>
